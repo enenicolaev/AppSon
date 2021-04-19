@@ -1,0 +1,141 @@
+@import "./medias.scss";
+
+.pricing {
+  min-height: 835px;
+  padding: 130px 0;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__plan {
+    min-height: 290px;
+    flex-basis: 330px;
+    padding: 10px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &__text {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__btn-block {
+    margin-top: 40px;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+
+  &__btn {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 3px solid #0F7BFF;
+
+
+    &:first-child {
+      border-radius: 25px 0px 0px 25px;
+    }
+
+    &:last-child {
+      border-radius: 0px 25px 25px 0px;
+
+    }
+
+    &_active {
+      color: $second-color;
+      background: $main-color;
+    }
+  }
+}
+
+.sub-card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 36, 80, 0.08);
+  border-radius: 5px;
+  flex-basis: 362px;
+  min-height: 576px;
+  padding: 40px 30px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+    background: rgba(0, 99, 221, 0.15);
+    border-radius: 50%;
+    width: 114px;
+    height: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon-wrap {
+    background: $main-color;
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;  
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__divider {
+    margin-top: 25px;
+    border: 2px solid #E9F3F8;
+    width: 100%;
+  }
+
+  &__text {
+    margin-top: 23px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 184%;
+    text-align: center;
+  }
+
+  &__cost {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 22px;
+    color: $main-color;
+
+    &_fund {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    margin-top: 25px;
+    width: 166px;
+    height: 50px;
+    @extend %default-btn;
+  }
+}

@@ -45,6 +45,7 @@ input,
 button,
 textarea {
   font-family: inherit;
+  background: none;
 }
 
 input::-ms-clear {
@@ -63,6 +64,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {

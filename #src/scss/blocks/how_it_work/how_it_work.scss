@@ -1,0 +1,87 @@
+@import "./medias.scss";
+
+.work {
+  min-height: 635px;
+  background: #F5FCFD;
+  padding: 120px 0 137px;
+
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  &__text {
+    max-width: 722px;
+    margin: 25px auto 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+  }
+}
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+  position: relative;
+
+  &__card {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0px;
+      .results__icon {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #DFEDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      border-top: 2px dashed $main-color;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      width: 300%;
+      height: 1px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}

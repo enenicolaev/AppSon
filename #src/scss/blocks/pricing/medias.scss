@@ -1,0 +1,18 @@
+
+@media (max-width: 1120px) {
+  .pricing {
+
+    &__flex {
+      flex-wrap: wrap;
+    }
+
+    &__plan {
+      flex-basis: 100%;
+      padding: 0 20%;
+    }
+  }
+
+  .sub-card {
+    flex-basis: 48%;
+  }
+}

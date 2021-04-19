@@ -1,4 +1,14 @@
 @import "./utils/null_style";
-@import "./utils/mixins";
 @import "./utils/fonts";
+@import "./utils/mixins";
 @import "./blocks/blocks";
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  max-width: 1166px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

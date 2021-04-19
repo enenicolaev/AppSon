@@ -1,0 +1,63 @@
+@import "./medias.scss";
+
+.promo-cards {
+  min-height: 635px;
+  background: #F5FCFD;
+  padding-top: 165px;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 340px;
+  }
+}
+
+.advantages {
+
+  &__card {
+    padding: 40px 14px 47px;
+    max-width: 362px;
+    min-height: 290px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+    border-radius: 5px;
+    margin-right: 15px;
+
+    &:nth-child(2) {
+      align-self: flex-end;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DFEDFF;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $text-color;
+  }
+}

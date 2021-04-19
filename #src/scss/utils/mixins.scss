@@ -1,6 +1,25 @@
 // Переменные
 
-// Миксин для поделючения шрифтов
+$main-color: #0F7BFF;
+$second-color: white;
+$text-color: #929292;
+
+%default-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $main-color;
+  border-radius: 25px;
+  color: $main-color;
+  transition: .3s all;
+  &:hover {
+    color: $second-color;
+    background: $main-color;
+    letter-spacing: 1.5px;
+  }
+}
+
+// Mixin to add fonts
 
 @mixin font($font_name, $file_name, $weight, $style) {
   @font-face {

@@ -96,10 +96,76 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_webpdetections__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/webpdetections */ "./#src/js/utils/webpdetections.js");
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/burger */ "./#src/js/modules/burger.js");
+
 
 document.addEventListener("DOMContentLoaded", () => {
   Object(_utils_webpdetections__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_burger__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
+
+/***/ }),
+
+/***/ "./#src/js/modules/burger.js":
+/*!***********************************!*\
+  !*** ./#src/js/modules/burger.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils_domutil__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/domutil */ "./#src/js/utils/domutil.js");
+
+
+function burgerMenu() {
+  const burgerContainer = Object(_utils_domutil__WEBPACK_IMPORTED_MODULE_0__["_qs"])(".burger-container", _utils_domutil__WEBPACK_IMPORTED_MODULE_0__["_d"]);
+
+  const burgerMenu = Object(_utils_domutil__WEBPACK_IMPORTED_MODULE_0__["_qs"])(".burger-menu__container", _utils_domutil__WEBPACK_IMPORTED_MODULE_0__["_d"]);
+
+  const burger = Object(_utils_domutil__WEBPACK_IMPORTED_MODULE_0__["_qs"])(".burger", _utils_domutil__WEBPACK_IMPORTED_MODULE_0__["_d"]);
+
+  Object(_utils_domutil__WEBPACK_IMPORTED_MODULE_0__["_e"])("click", burgerContainer, ev => {
+    burger.classList.toggle("burger_active");
+    burgerMenu.classList.toggle("burger-menu__container_active");
+    burgerContainer.classList.toggle("burger-container_active");
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (burgerMenu);
+
+/***/ }),
+
+/***/ "./#src/js/utils/domutil.js":
+/*!**********************************!*\
+  !*** ./#src/js/utils/domutil.js ***!
+  \**********************************/
+/*! exports provided: _d, _e, _qs, _qsa */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_d", function() { return _d; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_e", function() { return _e; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_qs", function() { return _qs; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_qsa", function() { return _qsa; });
+const _d = document; // Add event handler (foo) on node for eventName
+
+function _e(eventName, node, foo, options) {
+  return node.addEventListener(eventName, foo, options);
+} // Query selector
+
+
+function _qs(selector, node) {
+  return node.querySelector(selector);
+} // Query selector all
+
+
+function _qsa(selector, node) {
+  return node.querySelectorAll(selector);
+}
+
+
 
 /***/ }),
 
