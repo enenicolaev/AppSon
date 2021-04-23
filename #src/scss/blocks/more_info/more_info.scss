@@ -92,8 +92,12 @@
   }
 
   &__link {
+    max-width: 200px;
     display: flex;
-    margin-top: 35px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+    height: 40px;
 
     span {
       margin-right: 15px;

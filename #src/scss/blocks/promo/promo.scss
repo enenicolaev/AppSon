@@ -136,13 +136,14 @@
     top: 25px;
     background: #0063DD;
     border-radius: 25px;
-    transition: .2s all;  
+    transition: .2s letter-spacing;
     span {
       text-transform: uppercase;
       font-size: 16px;
       color: $second-color;
     }
     &:hover {
+      letter-spacing: 1.5px;
       border: 2px solid $second-color;
     }
   }

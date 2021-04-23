@@ -1,5 +1,5 @@
 
-<div class="pricing">
+<section class="pricing">
   <div class="container">
     <div class="pricing__flex">
 
@@ -7,8 +7,8 @@
         <div class="pricing__title">Pricing Plan</div>
         <div class="pricing__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</div>
         <div class="pricing__btn-block">
-          <button class="pricing__btn pricing__btn_active">Monthly</button>
-          <button class="pricing__btn">Yearly</button>
+          <button class="pricing__btn pricing__btn_active pricing__btn_month">Monthly</button>
+          <button class="pricing__btn pricing__btn_year">Yearly</button>
         </div>
       </div>
 
@@ -27,7 +27,10 @@
           50 gb Bandwith<br>
           Free Support
         </p>
-        <div class="sub-card__cost"><span class="sub-card__cost_fund">$</span>49.00</div>
+        <div class="sub-card__cost">
+          <span class="sub-card__cost_fund">$</span>
+          <span id="premium" class="sub-card__cost_total">49.00</span>
+        </div>
         <button class="sub-card__btn">Try Now</button>
       </div>
 
@@ -46,10 +49,13 @@
           50 gb Bandwith<br>
           Free Support
         </p>
-        <div class="sub-card__cost"><span class="sub-card__cost_fund">$</span>19.00</div>
+        <div class="sub-card__cost">
+          <span class="sub-card__cost_fund">$</span>
+          <span id="standart" class="sub-card__cost_total">19.00</span>
+        </div>
         <button class="sub-card__btn">Try Now</button>
       </div>
 
     </div>
   </div>
-</div>
+</section>

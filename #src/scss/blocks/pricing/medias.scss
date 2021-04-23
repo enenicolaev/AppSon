@@ -16,3 +16,16 @@
     flex-basis: 48%;
   }
 }
+
+@media (max-width: 767px) {
+  .pricing {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .sub-card {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+}

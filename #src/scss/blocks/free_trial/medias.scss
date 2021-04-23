@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+  .free-trial {
+    padding: 60px 0;
+
+    &__flex {
+      flex-direction: column;
+    }
+
+    &__no-credit {
+      text-align: center;
+    }
+
+    &__link {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .free-trial {
+    padding: 45px 0;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__no-credit {
+      text-align: center;
+    }
+
+    &__link {
+      margin-top: 50px;
+    }
+  }
+}

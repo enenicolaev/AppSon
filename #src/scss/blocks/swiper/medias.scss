@@ -1,0 +1,50 @@
+
+@media (max-width: 1660px) {
+  .swiper-block {
+    min-height: 500px;
+
+    &__img {
+      min-width: 500px;
+      margin-right: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .swiper-block {
+    padding-left: 20px;
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .swiper-block {
+    padding-left: 10px;
+
+    &__title {
+      padding: 0 5px;
+      font-size: 25px;
+    }
+
+    &__slider {
+      flex: 1 1 auto;
+    }
+  }
+
+  .swiper-block {
+
+    &__slider {
+      padding: 30px 0;
+    }
+  }
+
+  .swiper-card {
+    width: 300px !important;
+  }
+}

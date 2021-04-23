@@ -1,0 +1,66 @@
+@import "./medias.scss";
+
+.subs {
+  min-height: 360px;
+  background: #0F7BFF;
+  padding: 118px 0 120px;
+
+  &__wrap {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+  }
+
+  &__form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__email {
+    height: 50px;
+    flex-basis: 100%;
+    padding-left: 28px;
+    background: #0063DD;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    line-height: 150%;
+    color: white !important;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  &__btn {
+    height: 50px;
+    min-width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+    background: #FFFFFF;
+    transition: .3s all;
+
+    span {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      color: #0063DD;
+    }
+
+    &:hover {
+      letter-spacing: 1.5px;
+    }
+  }
+}
+.container {
+}

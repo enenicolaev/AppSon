@@ -8,7 +8,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^6.5.7"
+  },
   "browserslist": [
     "last 2 chrome versions",
     "last 2 firefox versions",
@@ -23,6 +25,7 @@
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "core-js": "^3.4.2",
+    "css-loader": "^5.2.4",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -42,6 +45,9 @@
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
     "normalize-scss": "^7.0.1",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
     "webp-converter": "^2.2.3",
     "webpack-stream": "^6.1.1"
   }

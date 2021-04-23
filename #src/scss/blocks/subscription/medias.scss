@@ -1,0 +1,17 @@
+@media (max-width: 575px) {
+  .subs {
+    padding: 60px 0;
+    min-height: 300px;
+    &__email {
+      font-size: 14px;
+    }
+
+    &__btn {
+      min-width: 110px;
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
