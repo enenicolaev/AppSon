@@ -48,6 +48,11 @@
 
   &__social-item {
     margin-right: 25px;
+    transition: .3s transform;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     &:last-child {
       margin-right: 0px;
