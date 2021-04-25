@@ -34,7 +34,6 @@
   }
 
   .info-block {
-
     &__img {
       margin: 0px 25px;
 
@@ -50,7 +49,6 @@
 
 @media (max-width: 575px) {
   .info-text {
-    margin-top: 30px;
-    padding-top: 50px;
+    padding: 30px 15px 50px;
   }
 }
