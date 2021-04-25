@@ -45,6 +45,6 @@
   }
 
   .swiper-card {
-    width: 300px !important;
+    width: calc(100vw - 20px) !important;
   }
 }
